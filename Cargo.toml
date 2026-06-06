@@ -1,0 +1,17 @@
+[package]
+name = "metalos"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bootloader = "0.9"
+
+[dependencies.spin]
+version = "0.12.0"
+default-features = false
+features = ["fair_mutex", "spin_mutex", "lazy"]
+
+[[bin]]
+name = "metalos"
+test = false
+bench = false
